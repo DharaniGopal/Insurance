@@ -19,7 +19,7 @@ body {
 
 .main-content {
   position: relative;
-  height: 60vh;
+  height: 90vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -42,7 +42,7 @@ body {
   justify-content: center;
   font-weight: normal;
   z-index: 2;
-  margin-left: 38%;
+  margin-left: 30%;
 }
 
 .dashboard h1 span {
@@ -190,7 +190,7 @@ body {
 
 .image-quote-container {
   position: absolute;
-  bottom: -170px;
+  bottom: -200px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -198,9 +198,9 @@ body {
   align-items: center;
   background: white;
   z-index: 1;
-  padding: 10px 30px;
+  padding: 30px 30px;
   border-radius: 10px;
-  max-width: 50%;
+  max-width: 70%;
   margin: 0 auto;
 }
 
@@ -538,8 +538,7 @@ header {
 }
 
 .product-card {
-  display: none;
-  height: 60vh;
+  /* height: 60vh; */
   background: #0095d9;
   color: white;
   padding: 15px 0 0 0;
