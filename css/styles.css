@@ -538,6 +538,7 @@ header {
 }
 
 .product-card {
+  display: none;
   height: 60vh;
   background: #0095d9;
   color: white;
