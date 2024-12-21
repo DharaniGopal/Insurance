@@ -49,6 +49,11 @@ body {
   font-weight: bold;
 }
 
+.WhatsApp {
+  width: 15px;
+  height: 15px;
+}
+
 .icon {
   width: 55px;
   height: 55px;
@@ -123,6 +128,7 @@ body {
 .support-navbar {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #191d23;
   color: white;
   padding: 10px 70px;
@@ -145,6 +151,12 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.contact-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .support-option,
@@ -190,7 +202,7 @@ body {
 
 .image-quote-container {
   position: absolute;
-  bottom: -170px;
+  bottom: -198px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -314,7 +326,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 8px;
-  padding: 20px;
+  padding: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: black;
@@ -358,13 +370,13 @@ header {
 }
 
 .hover-content h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   margin-bottom: 10px;
 }
 
 .hover-content p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0 30px 40px 30px;
   color: white;
 }
@@ -381,7 +393,8 @@ header {
 }
 
 .hover-content button:hover {
-  background-color: #0056b3;
+  background-color: white;
+  color: #1d2632;
 }
 
 .main-navbar select {
@@ -421,23 +434,6 @@ header {
   font-size: 0.9em;
 }
 
-.advisor-links {
-  background-color: #f3faff;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9em;
-}
-
-.advisor-links span {
-  cursor: pointer;
-  color: #007bff;
-}
-
-.advisor-links span:hover {
-  text-decoration: underline;
-}
-
 .terms-advisor-container {
   display: flex;
   justify-content: space-between;
@@ -447,20 +443,37 @@ header {
 
 .terms {
   font-size: 0.9em;
+  display: flex;
+  align-items: center;
 }
 
 .advisor-links {
   font-size: 0.9em;
+  color: red;
+  font-family: "Nano", sans-serif;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #f3faff;
+  padding: 10px;
+}
+
+.advisor-links .or-text {
+  color: grey;
 }
 
 .advisor-links span {
   cursor: pointer;
-  color: #007bff;
-  margin-left: 10px;
+  color: red;
+  margin-left: 5px;
 }
 
 .advisor-links span:hover {
   text-decoration: underline;
+}
+
+.advisor-icon {
+  margin-left: 5px;
 }
 
 .main-navbar ul {
@@ -496,12 +509,9 @@ header {
   margin-left: 15px;
   border-radius: 5px;
   border: none;
-  background: #1e4679;
+  /* background: #1e4679; */
   color: white;
-  font-size: 0.8rem;
-  padding: 5px 10px;
   cursor: pointer;
-  margin-top: -5px;
 }
 
 .support-dropdown select {
@@ -584,11 +594,11 @@ header {
   color: white;
   border: 1px solid white;
   border-radius: 5px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   cursor: pointer;
   transition: background 0.3s;
   width: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .plan-options {
@@ -599,10 +609,10 @@ header {
 
 .plan {
   position: relative;
+  padding: 10px;
   background-color: white;
   border-radius: 25px;
-  padding: 10px;
-  width: 23%;
+  width: 28%;
   text-align: left;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   color: black;
@@ -617,6 +627,7 @@ header {
   background-color: red;
   transform: scale(1.05);
   color: white;
+  padding: 5px;
 }
 
 .plan:hover h3,
@@ -626,33 +637,65 @@ header {
   color: white;
 }
 
+.plan:hover .plan-company {
+  margin-top: 20px;
+}
+
+.plan:hover .plan-rating {
+  color: white;
+}
+
 .plan2:hover {
   background-color: red;
   transform: scale(1.05);
 }
 
 .plan .buy-online-btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   background-color: #0056b3;
   color: white;
   border: none;
   cursor: pointer;
-  margin-bottom: -15px;
-  width: 110%;
-  margin-left: -11px;
+  margin-bottom: -5px;
+  width: 105.8%;
+  margin-left: -6.5px;
+  padding: 11px;
   border-radius: 0 0 10px 10px;
+  font-family: "Nano", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.plan .buy-online-btn img {
+  margin-left: -3px;
+  margin-bottom: -8px;
 }
 
 .plan .buy-online-btn2 {
-  display: block;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   background-color: #0056b3;
   color: white;
   border: none;
   cursor: pointer;
-  margin-bottom: -15px;
-  width: 110%;
-  margin-left: -11px;
+  margin-bottom: -5px;
+  width: 105.8%;
+  margin-left: -6.5px;
+  padding: 11px;
   border-radius: 0 0 10px 10px;
+  font-family: "Nano", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.plan .buy-online-btn2 img {
+  margin-left: -3px;
+  margin-bottom: -8px;
 }
 
 .plan:hover .learn-more,
@@ -662,12 +705,20 @@ header {
 
 .plan:hover .learn-more {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 15px;
+  font-family: "Nano", sans-serif;
+  font-weight: bold;
 }
 
 .plan:hover .learn-more2 {
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  padding: 15px;
+  font-family: "Nano", sans-serif;
+  font-weight: bold;
 }
 
 .plan .learn-more,
@@ -693,11 +744,6 @@ header {
   transform: scale(1);
 }
 
-.learn-more {
-  color: black;
-  margin-top: 10px;
-}
-
 .plan-image {
   position: absolute;
   top: -35px;
@@ -713,12 +759,17 @@ header {
   transform: translateX(-50%);
   width: 60px;
   height: 60px;
-  left: 44.5%;
+  left: 50%;
 }
 
 .plan h3 {
   text-align: center;
   color: #545454;
+  font-weight: normal;
+  font-size: 0.7rem;
+  font-family: "Nano", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .plan-company {
@@ -728,6 +779,8 @@ header {
   padding-left: 20px;
   margin-bottom: 3px;
   color: #1e4679;
+  font-family: "Nano", sans-serif;
+  font-size: 1rem;
 }
 
 .plan-description {
@@ -737,20 +790,39 @@ header {
   padding-left: 20px;
   margin-bottom: 3px;
   color: black;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
 }
 
 .plan span {
   display: block;
-  font-weight: bold;
+  font-weight: 900;
+  font-family: "Nano", sans-serif;
   text-align: left;
   padding-left: 20px;
   color: #1e4679;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .plan ul {
   list-style-type: disc;
   padding-left: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.plan ul li {
+  margin-bottom: 8px;
+}
+
+.plan-rating {
+  color: #41b0d1;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 .close-icon {
@@ -773,4 +845,8 @@ header {
 
 .plan .learn-more {
   display: none;
+}
+
+.normal-weight {
+  font-weight: normal;
 }
